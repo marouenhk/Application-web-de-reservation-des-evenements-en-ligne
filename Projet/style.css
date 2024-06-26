@@ -1,0 +1,692 @@
+body {
+    color: #000000;
+    font-family: 'Calibri';
+}
+
+img {
+    vertical-align: baseline;
+}
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgb(207, 122, 215);
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+}
+
+/*------ Header ---------*/
+.welcome{
+    color:#fff;
+    cursor: pointer;/***** Curseur sur l'icone *****/
+}
+.site-header {
+    position:relative;
+}
+
+.site-header .site-title img {
+    max-height: 150px;
+}
+
+.header-bar {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 14px 0;
+}
+.site-bar {
+    margin-left:15px;
+  }
+.site-bar img {
+    display: block;
+    max-width: 100%;
+}
+
+
+/********************  le bouton Login *************/
+#idbtn {
+    margin-right:20px; 
+}
+
+/* Styles pour le bouton Login */
+.site-navigation ul li:nth-last-child(1) a {
+    background-color:#9a28d7 ; 
+    color: #fff; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 20px; 
+    transition: all 0.3s ease; /* Transition fluide pour les effets */
+}
+
+/* Style au hover du bouton */
+.site-navigation ul li:nth-last-child(1) a:hover {
+    background-color: rgb(201, 112, 209); 
+    color: #fff; 
+    text-decoration: none; 
+}
+/**** navbar ****/
+
+.site-navigation {
+    top: -110px;
+    right: 80px;
+    left: 600px;
+    width: 800px;
+    overflow: hidden;
+    position: relative;
+   background: transparent;
+}
+.site-navigation.show {
+    height: auto;
+}
+
+.site-navigation ul {
+    top: 0;
+    width: 420px;
+    max-width: 90%;
+    overflow-x: scroll;
+    margin: 0;
+    background: #9a28d7;
+    display: flex;
+    flex-wrap: wrap;/***** text aligné mn youtube *****/
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    overflow: auto;
+    background: transparent;
+}
+
+.site-navigation.show ul {
+    left: 0;
+}
+
+.site-navigation ul li {
+    display: inline-block;
+    padding: 10px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.02rem;
+    text-transform: uppercase;
+}
+
+.site-navigation ul li a {
+    display: block;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+}nav a:hover{
+    background-color: rgb(207, 122, 215);
+    padding: 10px;
+    border-radius: 5px;
+}
+nav a:active{
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 5px;
+}
+.entry-title {
+    font-size: 90px;
+    font-weight: bold;
+    color: #fff;
+}
+.entry-header {
+    position: relative;
+    left: 18px;
+    bottom: 0px;
+    margin-top: 70px;
+    width: calc(100% - 94px);
+}
+
+/*************** footer ************/
+.site-footer {
+    width: 100%;
+    position: relative;
+    padding: 75px 0;
+    background: #000000;
+    text-align: center;
+}
+
+.footer-logo img {
+    max-width: 100%;
+}
+
+.footer-navigation ul{
+    padding: 0;
+    margin: 32px 0 0;
+}
+
+.footer-navigation li {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.footer-navigation li a {
+    object-fit: cover;
+    display: block;
+    padding: 8px 12px;
+    color: #fff;
+}
+.copyright{
+    color: #fff;
+}
+
+
+
+/*******************************************************************************************/
+
+
+/*************************** home page **************************************/
+
+/*****aboutus*****/
+
+.homepage-aboutus {
+    padding: 120px 0;
+    background: #fff;
+    font-size: 18px;
+    color: #777777;
+    margin-top: 32px;
+    margin-right: 18px;
+}
+
+.homepage-aboutus figure {
+    padding-right: 30px;
+}
+
+.homepage-aboutus figure img {
+    max-width: 100%;
+}
+
+.homepage-aboutus .entry-title {
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 1;
+    color: #232127;
+}
+.homepage-aboutus .entry-content {
+    margin-top: 32px;
+}
+
+/******** MDM boutton htha mn site mta codet css esmo cssboutton *****/
+
+.botton_noir {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem 2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    color: #050404;
+    backface-visibility: hidden;
+    border: 0.3rem solid transparent;
+    border-radius: 3rem;
+  }
+  .b {
+    border-color: #070707;
+    transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+  }
+  
+  .b:hover {
+    transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
+  }
+
+
+/************* news ****************/
+  .homepage-news .news {
+    margin-top: 96px;
+    text-align: center;
+}
+
+.homepage-news .news figure {
+    position: relative;
+    margin: 0;
+    margin-top: 96px;
+    text-align: center;
+}
+
+.homepage-news .news figure img {
+    width: 100%;
+}
+
+.homepage-news .news .event-rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -32px;
+    left: 32px;
+    width: 78px;
+    height: 78px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    background: #9a28d7;
+}
+
+.homepage-news .news .event-title {
+    margin-top: 32px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #232127;
+}
+.homepage-news .news .posted-date {
+    margin-top: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #777777;
+}
+.homepage-news .news .posted-date span {
+    color: #9a28d7;
+}
+.homepage-news .news .event-content p {
+    margin-top: 22px;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #777777;
+}
+
+.homepage-news .news .event-footer {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.homepage-news .news .event-footer a {
+    padding-bottom: 80px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 2px solid #bec0cc;
+    text-decoration: none;
+    color: #bec0cc;
+}
+
+.homepage-news .news .event-footer a:hover {
+    border-color: #9a28d7;
+    color: #9a28d7;
+}
+
+
+/**************** events  ************/
+
+.event-header {
+    position: absolute;
+    left: 18px;
+    bottom: 24px;
+    margin-top: 30px;
+    width: 100%;
+    margin-top: 12px;
+    font-size: 16px;
+    color: #777777;
+}
+
+ .event-header .event-title {
+    display: inline-block;
+    padding: 12px 18px;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #fff;
+    background: #9a24c1;
+}
+
+.event-header .posted-date {
+    padding: 2px 18px;
+    font-size: 14px;
+    color: #fff;
+}
+ 
+
+/****** slides ***************/
+.partneur {
+    position: relative;
+    margin: 0 auto;
+    padding-top: 130px;
+    padding-bottom: 200px;
+
+    width: 80%;
+    overflow: hidden;
+}
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    margin-left: -5px; /* Ajout d'une marge négative pour compenser l'espace entre les slides */
+}
+
+.slide {
+    flex: 0 0 calc(100% - 10px); /* Largeur de la slide avec espace entre elles */
+    margin: 0 50px; /* Espacement entre les slides */
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.homepage-partneurs .partneurs {
+    margin-top: 96px;
+    text-align: center;
+}
+
+.homepage-partneurs .partneurs figure {
+    position: relative;
+    margin: 0;
+    margin-top: 96px;
+    text-align: center;
+}
+
+.homepage-partneurs .partneurs figure img {
+    width: 100%;
+}
+.partneurs-title {
+    margin-top: 36px;
+    text-align: center;
+}
+
+.partneurs-title .partneurs-title  {
+    padding: 24px 0;
+    font-size: 60px;
+    line-height: 1;
+    color: #1b1616;
+    background: url("images/next-events-header-bg.png") no-repeat center;
+    text-align: center;
+}
+.partneurs-title p {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #777777;
+}
+
+
+/*****************   Events page *************/
+
+
+
+.events-search {
+    padding: 100px 0;
+}
+
+.events-search input[type="date"],
+.events-search input[type="text"] {
+    width: 100%;
+    padding: 12px 24px;
+    margin: 0 6px 30px;
+    border: 1px solid #e5e5e5;
+    font-size: 16px;
+    background: #f3f8f9;
+    color: #232127;
+}
+
+.events-search input[type="text"]::placeholder {
+    font-style: italic;
+}
+
+
+
+/********* booton htha mn site css esmo css botton *******/
+.events-search .botton_events {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: #232423;
+    padding: 0.3em 1.2em;
+    border-radius: 30px;
+    font-size: 1.3rem;
+    font-weight: 550;
+    color: #ffffff;
+    background-size: 100% 100%;
+    box-shadow: 0 0 0 4px #232423 inset;
+  }
+  
+  .events-search .botton_events:hover {
+    background-image: linear-gradient(
+      55deg,
+      transparent 10%,
+      #161616 10% 20%,
+      transparent 20% 30%,
+      #161616 30% 40%,
+      transparent 40% 50%,
+      #161616 50% 60%,
+      transparent 60% 70%,
+      #161616 70% 80%,
+      transparent 80% 90%,
+      #161616 90% 100%
+    );
+  }
+
+  /***********************************/
+
+.events-liste{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+    
+.events-liste .events-pic {
+    margin: 0;
+}
+
+.events-liste .events-pic img {
+    display: block;
+    width: 100%;
+}
+.events-liste .one-event{
+    margin-bottom: 30px;
+}
+
+.events-liste .event-content-wrap  {
+    padding: 48px 36px 36px;
+    border: 1px solid #e5e5e5;
+    border-top: 0;
+    background: #f3f8f9;
+}
+
+.events-liste .event-content-wrap .entry-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #232127;
+    text-decoration: none;
+}
+
+.events-liste .event-content-wrap .entry-title a {
+    color: #232127;
+}
+
+.events-liste .event-content-wrap .event-location {
+    margin-top: 12px;
+}
+
+.events-liste .event-content-wrap .event-location a {
+    font-size: 14px;
+    font-weight: bold;
+    color: #232127;
+    text-decoration: none;
+}
+
+.events-liste .event-content-wrap .event-date {
+    margin-top: 6px;
+    font-size: 16px;
+    color: #9a28d7;
+}
+
+.events-liste .event-content-wrap .event-cost {
+    width: 124px;
+    height: 52px;
+    margin-right: -37px;
+    font-size: 14px;
+    color: #777777;
+    background: #fff;
+}
+
+.events-liste .event-content-wrap .event-cost span {
+    margin-left: 4px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #9a28d7;
+}
+
+.events-liste .event-content-wrap .entry-content p {
+    margin-top: 22px;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #777777;
+}
+
+.events-liste .event-content-wrap .entry-footer {
+    margin-top: 36px;
+}
+
+.events-liste .event-content-wrap .entry-footer a {
+    padding-bottom: 2px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #9a28d7;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 2px solid #9a28d7;
+}
+
+
+
+
+
+/******************************** reservation page ****************/
+
+#divform {
+    max-width: 2000px;
+    max-height: 1000px;
+}
+
+.reservation-header {
+    background-image: url("images/contact-bg.jpg");
+    position: relative;
+}
+
+
+.reserver{
+    position: relative;
+    left: 5px;
+    bottom: 0px;
+    margin-top: 70px;
+    width: calc(100% - 94px); 
+}
+.reserver-title {
+    font-size: 80px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.reserver-form {
+    margin: 120px 0;
+}
+
+.reserver-form input[type="text"],
+.reserver-form input[type="email"],
+.reserver-form textarea {
+    width: 100%;
+    padding: 14px 22px;
+    margin-bottom: 30px;
+    border: 1px solid #e5e5e5;
+    background: #f3f8f9;
+    color: #232127;
+}
+
+.reserver-form input[type="text"]:focus,
+.reserver-form input[type="email"]:focus,
+.reserver-form textarea:focus {
+    outline: none;
+}
+
+.reserver-form input[type="text"]::placeholder,
+.reserver-form input[type="email"]::placeholder,
+.reserver-form textarea::placeholder {
+    font-style: italic;
+}
+
+.reserver-form input[type="submit"] {
+    margin-top: 36px;
+    border: 0;
+}
+
+.reserver-form input[type="submit"]:focus ,
+.reserver-form input[type="text"]:focus,
+.reserver-form textarea :focus,
+.reserver-form input[type="email"]:focus{
+    outline: none;
+    border-color: #333;
+}
+
+/*****  Dark button   *****/
+#dark{
+    margin-left: 630px;
+    cursor: pointer;
+}
+
+
+/*****   Mode de paiment    **********/
+
+#Sujet {
+    font-size: 16px;
+    padding: 10px;
+    border: 2px solid #e5e5e5;
+    border-radius: 5px;
+    background-color: #f3f8f9;
+    color: #333;
+    width: 100%; 
+}
+
+#Sujet option {
+    font-size: 16px;
+    background-color: #f3f8f9;
+    color: #333;
+}
+
+/****** nombre de ticket ******/
+
+#number {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #e5e5e5;
+    border-radius: 5px;
+    background-color: #f3f8f9;
+    color: #333;
+}
+
+#number:focus ,#Commentaire:focus{
+    border-color: #333; /* Couleur de la bordure lorsqu'il est en focus */
+    outline: none;
+}
+
+
+/*************************************************************************************/
+@font-face {
+    font-family: 'Calibri';
+    src: url('fonts/Calibri.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Calibri.woff') format('woff'),
+    url('fonts/Calibri.ttf')  format('truetype'),
+    url('fonts/Calibri.svg#Calibri') format('svg');
+    font-weight: normal;
+    font-style: normal;
+} /*------- Hathy mdm mtaa font amltha copier coller -------**/

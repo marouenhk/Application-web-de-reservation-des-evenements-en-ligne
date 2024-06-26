@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylelogin.css">   
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+</head>
+
+
+<header>
+  <div class="navigation-card" id ="bloc" onmouseenter="changecolor()" onmouseleave="towhite()"> <!-- js fonction bch tbdl background -->
+    <a href="index.html" class="tab"id ="bloc1">
+      <svg class="svgIcon" viewBox="0 0 104 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M100.5 40.75V96.5H66V68.5V65H62.5H43H39.5V68.5V96.5H3.5V40.75L52 4.375L100.5 40.75Z" stroke="black"stroke-width="7"></path>
+      </svg><!-- home icon -->
+    </a>
+ </div>   <a href="index.html"> <img src="images/logo.png"></a>
+</header>  
+
+
+
+<body>
+ </html>
+   <div class="login-box">
+       <h2>Login</h2>
+       <form onsubmit="return validation();" action="login.php" method="post"> 
+     <div class="user-box">
+        <input type="text" id="Username" size="60" name="Username">
+        <label>Username</label>
+     </div>
+      <div class="user-box">
+        <input type="password" id="Password" size="60" name="Pass">
+        <label>Password</label>
+      </div>
+      <div class="user-box">
+        <input type="text" id="rolee" size="60" name="role" placeholder="User/Admin" style="color: aliceblue;">
+        <label>Role</label>
+      </div>
+      <button type="submit" > 
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Login
+      </button> <!-- Mn site  -->
+      <div class="social">
+        <div class="go">
+          <i class="fab fa-instagram"></i>  Instagram
+        </div>
+        <div class="fb">
+          <i class="fab fa-facebook"></i>  Facebook
+        </div>
+      </div>
+    </form>
+ </div>
+</body>
+
+
+<script src="js/code1.js"></script>
+</html>

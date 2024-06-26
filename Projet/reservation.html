@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projet</title>
+    <link rel="stylesheet" href="boost/css/bootstrap-icons.css" >
+    <link rel="stylesheet" href="boost/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body id="body">
+    <header class="site-header" style="background: url(images/header-bg.jpg);"> <!-- mdm background deja tswira kk moch double -->
+        <div class="header-bar"> 
+            <nav class="container text-center">
+                     <div class="container-fluid"><!-- boostrap -->
+                                 <div class="site-bar">
+                                      <a class="navbar-brand" href="#">
+                                      <img src="images/logo.png" alt="logo"></a>
+                                 </div>
+                             <div class="col-2 col-lg-7 order-3 order-lg-2"><!-- boostrap -->
+                                 <div class="site-navigation">
+                                      <ul>
+                                          <li><a href="index.html">Home</a></li>
+                                          <li><a href="index.html">About us</a></li>
+                                          <li><a href="index.html">News</a></li>
+                                          <li><a href="events.html">Events</a></li>
+                                          <li><a href="#">Reservation</a></li>
+                                          <li><a href="signin.html"  id ="idbtn">Log in</a></li>
+
+                                     </ul>
+                                  </div>
+                                  <div>
+                                    <div class="row">
+                                        <div class="col flex flex-column justify-content-center"><!-- boostrap -->
+                                            <div class="entry-header">
+                                                <div class="countdown flex align-items-center">
+                                                    <h2 class="entry-title"> We have the best Events : <br>Get your tiket now !</h2>
+                                                </div>
+                                            </div>
+            
+                                        </div>
+                                    </div>
+                    </div>
+               </div>
+          </nav><!-- boostrap -->
+        </div>
+    </header>
+    
+
+ <section>
+  <div class="container"  id="bloc"><!-- boostrap -->
+    <div class="row">
+        <div class="col-12">
+            <div class="reserver-form">
+                <form class="row ticket-form " name="RegForm"id="form" action="reservation.php" onsubmit="return validateForm()" method="post">   
+                     <h2 class="text-center mb-4">Get Started Here</h2>
+                     <div class="col-lg-6 col-10 mx-auto" id="divform">
+                         <div class="col-lg-6 col-md-6 col-12">
+                             <input type="text" placeholder="Full name"id="Full name" size="60" name="Nom">
+                         </div><!-- boostrap -->
+                         <div class="col-lg-6 col-md-6 col-12">
+                             <input type="text" placeholder="Adresse"id="adresse"  size="60" name="Adresse">
+                        </div><!-- boostrap -->
+                         <div class="col-lg-6 col-md-6 col-12">
+                             <input type="email" placeholder="E-mail"id="E-mail" size="60" name="E-mail"pattern="[^ @]*@[^ @]*">
+                        </div><!-- boostrap -->
+                         <div class="col-lg-6 col-md-6 col-12">
+                             <input type="text" placeholder="Phone"id="Phone" size="60" name="Téléphone">
+                        </div><!-- boostrap -->
+                             <textarea name="Commentaire" rows="3" id="Commentaire" placeholder="Commentaire"></textarea>
+                             <input type="number" name="number" id="number" placeholder="Number of Tickets" required>                    <br /><br />
+                         <div>
+                              <p style="font-weight: bold;font-family: 'Poppins', 'sans-serif'"> Mode de Paiement</p>
+                              <select type="text" value="" id="Sujet"style=" font-style: italic;" name="payment">
+                              <option></option>
+                              <option>D17</option>
+                              <option selected>Sur Place</option>
+                              <option>Konnect</option>
+                              <option>Carte Bancaire</option>
+                             </select>
+                         </div>   <br/>
+                         <div>
+                             <input class="btn btn-primary col-lg-4 col-md-10 col-8 mx-auto" type="submit" value="Reserver" name="ajouter">
+                             <input class="btn btn-secondary" style="margin-top: 37px;" type="reset" value="Rénit" id ="btnS" name="Reset" onclick="return testConfirmDialog()" />
+                         </div>
+                    </div><!-- boostrap -->
+                </form>
+            </div>
+        </div>
+    </div>
+       <img id="dark" src="images/moon.png" alt="Dark Mode Icon" width="50"> <!-- Icône pour basculer le mode sombre -->
+ </div>
+</section>
+</body>
+
+
+
+
+
+
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12"><!-- boostrap -->
+                <figure class="footer-logo">
+                    <a href="#"><img src="images/logo.png" alt=""></a>
+                </figure>
+
+                <nav class="footer-navigation">
+                    <ul class="flex flex-wrap justify-content-center align-items-center">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html">About us</a></li>
+                        <li><a href="index.html">News</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="#">Reservation</a></li>
+                    </ul>
+                </nav>
+                  <p class="copyright">Copyright 2024 All rights reserved |</p>   
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/code1.js"></script>
+

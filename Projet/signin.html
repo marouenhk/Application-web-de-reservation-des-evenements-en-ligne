@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/signin.css">
+</head>
+
+
+<body> 
+ <div class="login-box">
+    <form class="form" method="post" action="signin.php" id="form">
+         <p class="title">Register </p>
+         <p class="message">Signup now and get full access to our app. </p>
+        <div class="flex">
+             <label>
+              <input class="input" type="text" id="Full name" size="60" name="Nom">
+              <span>UserName</span>
+             </label>
+        </div>  
+            
+       <label>
+          <input class="input" type="email" id="E-mail" size="60" name="E-mail"pattern="[^ @]*@[^ @]*">
+          <span>Email</span>
+       </label> 
+        
+       <label>
+          <input class="input" type="password" id="Mot de passe" size="60" name="password">
+          <span>Password</span>
+       </label>
+      <label>
+          <input class="input" type="password" size="60" name="repeat"  id="password2">
+          <span>Confirm password</span>
+      </label>
+      <button class="submit" type="submit" name="Register" >Signup</button>
+      <p class="signin">Already have an acount ? <a href="login.html">Log In</a> </p>
+    </form>
+ </div>
+</body>
+
+
+
+<script src="js/code2.js"></script>
+

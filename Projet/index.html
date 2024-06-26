@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projet</title>
+    <link rel="stylesheet" href="boost/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+
+<body>
+    <header class="site-header" style="background: url(images/header-bg.jpg);"> <!-- background -->
+        <div class="header-bar"> 
+            <nav class="container text-center"><!-- boostrap -->
+                     <div class="container-fluid"><!-- boostrap -->
+                                 <div class="site-bar">
+                                      <a class="navbar-brand" href="#">
+                                      <img src="images/logo.png" alt="logo"></a>
+                                 </div>
+                             <div class="col-2 col-lg-7 order-3 order-lg-2"><!-- boostrap -->
+                                 <div class="site-navigation">
+                                      <ul>
+                                          <li>
+                                               <svg onclick="Click()" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="welcome" viewBox="0 0 16 16">
+                                                 <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z"/>
+                                                 <path d="m8 3.293 4.712 4.712A4.5 4.5 0 0 0 8.758 15H3.5A1.5 1.5 0 0 1 2 13.5V9.293z"/>
+                                                 <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m1.679-4.493-1.335 2.226a.75.75 0 0 1-1.174.144l-.774-.773a.5.5 0 0 1 .708-.707l.547.547 1.17-1.951a.5.5 0 1 1 .858.514"/>
+                                              </svg>     <!-- Icon welcome js -->
+                                          </li> 
+                                          <li><a href="#">Home</a></li>
+                                          <li><a href="#homepage-aboutus">About us</a></li>
+                                          <li><a href="#homepage-news">News</a></li>
+                                          <li><a href="events.html">Events</a></li>
+                                          <li><a href="reservation.html">Reservation</a></li>
+                                          <li><a href="signin.html"  id ="idbtn">Log in</a></li>
+                                     </ul>
+                                  </div>
+                            <div>
+                                    <div class="row">
+                                        <div class="col flex flex-column justify-content-center"><!-- boostrap -->
+                                            <div class="entry-header">
+                                                <div class="countdown flex align-items-center">
+                                                    <h2 class="entry-title"> We have the best Events : <br>Get your tiket now !</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                    </div>
+             </nav>
+       </div>
+  </header>
+
+
+
+    <div class="homepage-aboutus" id="homepage-aboutus">
+        <div class="container"><!-- boostrap -->
+            <div class="row"><!-- boostrap -->
+                <div class="col-12 col-md-4 col-lg-5"><!-- boostrap -->
+                    <figure>
+                        <img src="images/logo-2.png" alt="logo">
+                    </figure>
+                </div>
+    
+                <div class="col-12 col-md-8 col-lg-7"><!-- boostrap -->
+                    <header class="entry-header">
+                        <h2 class="entry-title">What is Agenda and why choose our services?</h2>
+    
+                        <div class="entry-content">
+                              <p>Agenda is a site web where you will find all events and partys that are located in Sahel .
+                              This will facillated to all students to have the best destination in the weekends.
+                              </p>
+                        </div>
+                    </header>
+                    <footer class="entry-footer">
+                        <a href="events.html" class="botton_noir b">Register Now</a>
+                    </footer>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="homepage-news" id ="homepage-news">
+        <div class="container"><!-- boostrap -->
+            <div class="row"><!-- boostrap -->
+                <div class="partneurs-title">
+                    <h2 class="partneurs-title">NEWS</h2>
+                    <p>.</p>
+                </div>
+            </div>
+    
+            <!-- Image 1 -->
+            <div class="row"><!-- boostrap -->
+                <div class="col-12 col-sm-6 col-md-4"><!-- boostrap -->
+                    <div class="news" id ="bloc" >
+                        <figure onmouseenter="changeimg1()" onmouseleave="returnimg1()"> <!-- fonction js to change images -->
+                            <a href="reservation.html"><img src="images/09-01-2024.jpg" alt="1" id="img1">
+                            </a>
+    
+                            <div class="event-rating">8.9</div>
+                        </figure>
+    
+                        <header class="event">
+                            <h3 class="event-title">Alianza_tunisia</h3>
+    
+                            <div class="posted-date">Theursday <span>Jan 09, 2024</span></div>
+                        </header>
+    
+                        <div class="event-content">
+                            <p>Don’t miss alianza_tunisia tomorrow night at our concert hall and book your table</p>
+                        </div>
+    
+                        <footer class="event-footer">
+                            <a href="reservation.html">Resérver</a>
+                        </footer>
+                    </div>
+                </div>
+     
+            <!-- Image 2 -->
+
+                <div class="col-12 col-sm-6 col-md-4"><!-- boostrap -->
+                    <div class="news">
+                        <figure onmouseenter="changeimg2()" onmouseleave="returnimg2()"><!-- fonction js to change images -->
+                            <a href="reservation.html"><img src="images\festival.jpg" alt="1"id="img2"></a>
+    
+                            <div class="event-rating">7.9</div> 
+                        </figure>
+    
+                        <header class="event">
+                            <h3 class="event-title">El Festival </h3>
+    
+                            <div class="posted-date">Friday <span>Mai 02, 2024</span></div>
+                        </header>
+    
+                        <div class="event-content">
+                            <p>Le Fameux spectacle El Festival sera sur scène 
+                                Music By Dj kiko 🎧
+                                Don't miss the show .</p>
+                        </div>
+    
+                        <footer class="event-footer">
+                            <a href="reservation.html">Resérver</a>
+                        </footer>
+                    </div>
+                </div>
+    
+
+                <!-- Image 3 -->
+                <div class="col-12 col-sm-6 col-md-4"><!-- boostrap -->
+                    <div class="news">
+                        <figure onmouseenter="changeimg3()" onmouseleave="returnimg3()"><!-- fonction js to change images -->
+                            <a href="reservation.html"><img src="images/samara.jpg" alt="1"id="img3"></a>
+                            <div class="event-rating">9.9</div>
+                        </figure>
+    
+                        <header class="event">
+                            <h3 class="event-title">Samara</h3>
+    
+                            <div class="posted-date">Saturday <span>Avr 20, 2024</span></div>
+                        </header>
+    
+                        <div class="entry-content">
+                            <p>SHOWCASE Samedi 13.01.2024 Platinum Metalika Sousse 🍾
+                              Samara With Dj Rosh 
+                                </p>
+                        </div>
+    
+                        <footer class="event-footer">
+                            <a href="reservation.html">Resérver</a>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br>
+
+</body>
+
+
+
+<div>
+      <div class="homepage-partneurs" id ="homepage-partneurs">
+         <div class="partneurs-title">
+              <h2 class="partneurs-title">Partneurs</h2>
+         </div>
+     </div>
+
+    <div class="partneur">        
+ 
+
+        <div class="col-12 col-sm-6 col-md-4 ">
+            <div class="slider">
+            <div class="slide activd">
+                <img src="images/partneur 1.png" alt="Image 1">
+            </div>
+            <div class="slide ">
+                <img src="images/partneur 2.jpg" alt="Image 2">
+            </div>
+            <div class="slide">
+                <img src="images/partneur 3.jpg" alt="Image 3">
+            </div>
+            <div class="slide">
+                <img src="images/partneur 4.jpg" alt="Image 4">
+            </div>
+            <div class="slide">
+                <img src="images/partneur 5.jpg" alt="Image 5">
+            </div>
+            <div class="slide">
+                <img src="images/partneur 6.jpg" alt="Image 6">
+            </div>
+            <div class="slide">
+                <img src="images/partneur 7.jpg" alt="Image 7">
+            </div>
+             <div class="slide">
+                <img src="images/partneur 8.jpg" alt="Image 8">
+            </div>
+            <div class="slide">
+                 <img src="images/partneur 9.jpg" alt="Image 9">
+             </div>
+             <div class="slide">
+                 <img src="images/partneur 10.jpg" alt="Image 10">
+            </div>
+            <div class="slide">
+                 <img src="images/partneur 11.jpg" alt="Image 11">
+             </div>
+             <div class="slide">
+                 <img src="images/partneur 12.jpg" alt="Image 12">
+             </div>
+             <div class="slide">
+                 <img src="images/partneur 13.jpg" alt="Image 13">
+             </div>
+            </div>  
+        </div>
+            <button class="prev" onclick="prevSlide()">&#10094;</button><!-- prev boutton -->
+            <button class="next" onclick="nextSlide()">&#10095;</button><!-- next boutton-->
+    </div>
+    
+</div>
+
+
+
+<footer class="site-footer">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12"><!-- boostrap -->
+                <figure class="footer-logo">
+                    <a href="#"><img src="images/logo.png" alt=""></a>
+                </figure>
+
+                <nav class="footer-navigation">
+                    <ul class="flex flex-wrap justify-content-center align-items-center">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#homepage-aboutus">About us</a></li>
+                        <li><a href="#homepage-news">News</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="reservation.html">Reservation</a></li>
+                </nav>
+                  <p class="copyright">Copyright 2024 All rights reserved |</p>   
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="js/code.js"></script>
+</html>

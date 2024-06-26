@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projet</title>
+    <link rel="stylesheet" href="boost/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+
+    <header class="site-header" style="background: url(images/header-bg.jpg);"> <!-- mdm background deja tswira kk moch double -->
+        <div class="header-bar"> 
+            <nav class="container text-center">
+                     <div class="container-fluid"><!-- boostrap -->
+                                 <div class="site-bar">
+                                      <a class="navbar-brand" href="#">
+                                      <img src="images/logo.png" alt="logo"></a>
+                                 </div>
+                             <div class="col-2 col-lg-7 order-3 order-lg-2"><!-- boostrap -->
+                                 <div class="site-navigation">
+                                      <ul>
+                                          <li><a href="index.html">Home</a></li>
+                                          <li><a href="index.html">About us</a></li>
+                                          <li><a href="index.html">News</a></li>
+                                          <li><a href="#">Events</a></li>
+                                          <li><a href="reservation.html">Reservation</a></li>
+                                          <li><a href="signin.html"  id ="idbtn">Log in</a></li>
+
+                                     </ul>
+                                  </div>
+                                  <div>
+                                    <div class="row">
+                                        <div class="col flex flex-column justify-content-center"><!-- boostrap -->
+                                            <div class="entry-header">
+                                                <div class="countdown flex align-items-center">
+                                                    <h2 class="entry-title"> We have the best Events : <br>Get your tiket now !</h2>
+                                                </div>
+                                            </div>
+            
+                                        </div>
+                                    </div>
+                    </div>
+               </div>
+          </nav><!-- boostrap -->
+        </div>
+    </header>
+    
+<form class="events-search">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-3">
+                <input type="date" name="date" placeholder="Date">
+            </div>
+
+            <div class="col-12 col-md-3">
+                <input type="text" placeholder="Event">
+            </div>
+
+            <div class="col-12 col-md-3">
+                <input type="text" placeholder="Location">
+            </div>
+
+            <div class="col-12 col-md-3">
+                <input class="botton_events" type="submit" value="Search Events">
+            </div>
+        </div>
+    </div>
+</form>
+
+
+<div class="container">
+    <div class="row ">
+        <div class="events-liste ">
+        <div class="col-6 col-sm-4 one-event">
+            <figure class="events-pic">
+                <a href="reservation.html"><img src="images/samara.jpg"alt=""></a>
+            </figure>
+
+            <div class="event-content-wrap">
+                <header class="entry-header flex justify-content-between">
+                    <div>
+                        <h2 class="entry-title"><a href="reservation.html">Samara</a></h2>
+
+                        <div class="event-location"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+  <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+  <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+</svg><a href="#">Platinum Metalika Sousse</a></div>
+
+                        <div class="event-date"> 13.01.2024</div>
+                    </div>
+
+                    <div class="event-cost flex justify-content-center align-items-center">
+                        from<span>50 DT</span>
+                    </div>
+                </header>
+
+                <footer class="entry-footer">
+                    <a href="reservation.html">Réserver</a>
+                </footer>
+            </div>
+        </div>
+
+        <div class="col-6 col-sm-4 one-event">
+            <figure class="events-pic">
+                <a href="#"><img src="images/festival.jpg" alt=""></a>
+            </figure>
+
+            <div class="event-content-wrap">
+                <header class="entry-header flex justify-content-between">
+                    <div>
+                        <h2 class="entry-title"><a href="reservation.html">El Festival</a></h2>
+
+                        <div class="event-location"><a href="#">AL MANDRA Sousse</a></div>
+
+                        <div class="event-date">Jan 11, 2024</div>
+                    </div>
+
+                    <div class="event-cost flex justify-content-center align-items-center">
+                        from<span>100 DT</span>
+                    </div>
+                </header>
+
+                <footer class="entry-footer">
+                    <a href="reservation.html">Réserver</a>
+                </footer>
+            </div>
+        </div>
+ <div class="w-100 d-none d-md-block"></div>
+
+        <div class="col-6 col-sm-4 one-event">
+            <figure class="events-pic">
+                <a href="reservation.html"><img src="images/11-01.jpg" alt=""></a>
+            </figure>
+
+            <div class="event-content-wrap">
+                <header class="entry-header flex justify-content-between">
+                    <div>
+                        <h2 class="entry-title"><a href="reservation.html">ZAMMOURI DJ</a></h2>
+
+                        <div class="event-location"><a href="#">Dar Shat Mahdia</a></div>
+
+                        <div class="event-date">Jan 11, 2024</div>
+                    </div>
+
+                    <div class="event-cost flex justify-content-center align-items-center">
+                        from<span>30 DT</span>
+                    </div>
+                </header>
+
+                <footer class="entry-footer">
+                    <a href="reservation.html">Réserver</a>
+                </footer>
+            </div>
+        </div>
+
+        <div class="col-6 col-sm-4 one-event">
+            <figure class="events-pic">
+                <a href="reservation.html"><img src="images/12-01.jpg" alt=""></a>
+            </figure>
+
+            <div class="event-content-wrap">
+                <header class="entry-header flex justify-content-between">
+                    <div>
+                        <h2 class="entry-title"><a href="reservation.html">ALF LILA  W LILA</a></h2>
+
+                        <div class="event-location"><a href="#">Dar Shat Mahdia</a></div>
+
+                        <div class="event-date">Jan 12, 2024 </div>
+                    </div>
+
+                    <div class="event-cost flex justify-content-center align-items-center">
+                        from<span>120 DT</span>
+                    </div>
+                </header>
+                <footer class="entry-footer">
+                    <a href="reservation.html">Réserver</a>
+                </footer>
+            </div>
+        </div>
+
+        <div class="col-6 col-sm-4 one-event">
+            <figure class="events-pic">
+                <a href="reservation.html"><img src="images/14-01.jpg" alt=""></a>
+            </figure>
+
+            <div class="event-content-wrap">
+                <header class="entry-header flex justify-content-between">
+                    <div>
+                        <h2 class="entry-title"><a href="reservation.html">Machu Picchu / TSHAK DJ</a></h2>
+
+                        <div class="event-location"><a href="#">Dar Shat Mahdia </a></div>
+
+                        <div class="event-date">Jan 14, 2024</div>
+                    </div>
+
+                    <div class="event-cost flex justify-content-center align-items-center">
+                        from<span>35 DT</span>
+                    </div>
+                </header>
+
+                <footer class="entry-footer">
+                    <a href="reservation.html">Réserver</a>
+                </footer>
+            </div>
+        </div>
+
+        <div class="col-6 col-sm-4 one-event">
+            <figure class="events-pic">
+                <a href="reservation.html"><img src="images/10-01.jpg" alt=""></a>
+            </figure>
+
+            <div class="event-content-wrap">
+                <header class="entry-header flex justify-content-between">
+                    <div>
+                        <h2 class="entry-title"><a href="reservation.html">DJ Festival in town</a></h2>
+
+                        <div class="event-location"><a href="#">Dar Shat Mahdia</a></div>
+
+                        <div class="event-date">Jan 10, 2024</div>
+                    </div>
+
+                    <div class="event-cost flex justify-content-center align-items-center">
+                        from<span>30 DT</span>
+                    </div>
+                </header>
+                <footer class="entry-footer">
+                    <a href="reservation.html">Réserver</a>
+                </footer>
+            </div>
+        </div>
+
+        <div class="col-6 col-sm-4 one-event">
+            <figure class="events-pic">
+                <a href="reservation.html"><img src="images//09-01-2024.jpg" alt=""></a>
+            </figure>
+
+            <div class="event-content-wrap">
+                <header class="entry-header flex justify-content-between">
+                    <div>
+                        <h2 class="entry-title"><a href="reservation.html">Alianza_tunisia</a></h2>
+
+                        <div class="event-location"><a href="#">GOLF BRAÜ El Kantaoui</a></div>
+
+                        <div class="event-date">Jan 09, 2024</div>
+                    </div>
+
+                    <div class="event-cost flex justify-content-center align-items-center">
+                        from<span>89DT</span>
+                    </div>
+                </header>
+
+                <footer class="entry-footer">
+                    <a href="#reservation.html">Réserver</a>
+                </footer>
+            </div>
+        </div>
+       </div>
+    </div>
+</div>
+<footer class="site-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <figure class="footer-logo">
+                    <a href="#"><img src="images/logo.png" alt=""></a>
+                </figure>
+
+                <nav class="footer-navigation">
+                    <ul class="flex flex-wrap justify-content-center align-items-center">
+                        <li><a href="index.html">Home</a></li>
+                            <li><a href="index.html">About us</a></li>
+                            <li><a href="index.html">News</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="reservation.html">Reservation</a></li>
+                    </ul>
+                </nav>
+                  <p class="copyright">Copyright 2024 All rights reserved |</p>   
+            </div>
+        </div>
+    </div>
+</footer>
+
